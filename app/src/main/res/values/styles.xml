@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#7C7CFF</item>
+        <item name="colorPrimaryDark">#121212</item>
+        <item name="colorAccent">#FF4444</item>
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:statusBarColor">#1E1E2E</item>
+        <item name="android:navigationBarColor">#121212</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+</resources>
