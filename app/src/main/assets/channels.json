@@ -20,11 +20,6 @@
     "url": "https://ok.ru/videoembed/11273558040303?autoplay=1"
   },
   {
-    "title": "Большая Азия",
-    "category": "Познавательные",
-    "url": "https://vk.com/video_ext.php?oid=-149051075&id=456240225&autoplay=1"
-  },
-  {
     "title": "Культура",
     "category": "Познавательные",
     "url": "https://televizor24tochka.ru/tv-embed/rossiya-kultura.html?autoplay=1"
@@ -33,11 +28,6 @@
     "title": "Охотник и рыболов",
     "category": "Познавательные",
     "url": "https://ok.ru/videoembed/404041965268?autoplay=1"
-  },
-  {
-    "title": "Тайна ТВ",
-    "category": "Познавательные",
-    "url": "https://vkvideo.ru/video_ext.php?oid=-174774800&id=456239055&autoplay=1"
   },
   {
     "title": "2X2",
@@ -52,12 +42,7 @@
   {
     "title": "СТС",
     "category": "Развлечения",
-    "url": "https://vk.com/video_ext.php?oid=-18496184&id=456260645&autoplay=1"
-  },
-  {
-    "title": "СТС Love",
-    "category": "Развлечения",
-    "url": "https://vk.com/video_ext.php?oid=-68488417&id=456242742&autoplay=1"
+    "url": "https://ok.ru/videoembed/11258072604205?autoplay=1"
   },
   {
     "title": "Суббота!",
@@ -85,11 +70,6 @@
     "url": "https://ok.ru/videoembed/11365475425838?autoplay=1&nochat=1&format=hls"
   },
   {
-    "title": "Домашний",
-    "category": "Основные",
-    "url": "https://vk.com/video_ext.php?oid=-30584503&id=456259900&autoplay=1"
-  },
-  {
     "title": "Культура",
     "category": "Основные",
     "url": "https://televizor24tochka.ru/tv-embed/rossiya-kultura.html?autoplay=1"
@@ -112,17 +92,12 @@
   {
     "title": "СТС",
     "category": "Основные",
-    "url": "https://vk.com/video_ext.php?oid=-18496184&id=456260645&autoplay=1"
+    "url": "https://ok.ru/videoembed/11258072604205?autoplay=1"
   },
   {
     "title": "Авторадио",
     "category": "Музыка",
     "url": "https://ok.ru/videoembed/13180506?autoplay=1"
-  },
-  {
-    "title": "Europa Plus TV",
-    "category": "Музыка",
-    "url": "https://vk.com/video_ext.php?oid=-22186156&id=456239617&autoplay=1"
   },
   {
     "title": "HITS 360",
@@ -140,11 +115,6 @@
     "url": "https://ok.ru/videoembed/216342154?autoplay=1"
   },
   {
-    "title": "Вместе.РФ",
-    "category": "Новости",
-    "url": "https://vk.com/video_ext.php?oid=-49303888&id=456250868&autoplay=1"
-  },
-  {
     "title": "ДОН 24",
     "category": "Региональные",
     "url": "https://ok.ru/videoembed/2747243568851?autoplay=1&nochat=1"
@@ -153,11 +123,6 @@
     "title": "«Губерния» Хабаровск",
     "category": "Региональные",
     "url": "https://ok.ru/videoembed/1493804719698?autoplay=1&nochat=1"
-  },
-  {
-    "title": "Компас ТВ",
-    "category": "Региональные",
-    "url": "https://vk.com/video_ext.php?oid=-9575722&id=456239366&autoplay=1"
   },
   {
     "title": "Телеканал Краснодар",
@@ -173,11 +138,6 @@
     "title": "РГВК Дагестан",
     "category": "Региональные",
     "url": "https://ok.ru/videoembed/1400505310934?autoplay=1&nochat=1"
-  },
-  {
-    "title": "Волгоград 24",
-    "category": "Региональные",
-    "url": "https://vk.com/video_ext.php?oid=157253474&id=456240027&autoplay=1"
   },
   {
     "title": "Eurosport 1",
