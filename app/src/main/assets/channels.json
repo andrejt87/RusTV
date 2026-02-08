@@ -148,5 +148,25 @@
     "title": "Eurosport 2",
     "category": "Спорт",
     "url": "https://ok.ru/videoembed/11880233639470?autoplay=1&nochat=1"
+  },
+  {
+    "title": "Матч Футбол 1",
+    "category": "Спорт",
+    "url": "https://tas-ix.tv/tv_tasix/52-match-futbol-1.html"
+  },
+  {
+    "title": "Матч Футбол 2",
+    "category": "Спорт",
+    "url": "https://tas-ix.tv/tv_tasix/53-match-futbol-2.html"
+  },
+  {
+    "title": "Матч Футбол 3",
+    "category": "Спорт",
+    "url": "https://tas-ix.tv/tv_tasix/54-match-futbol-3.html"
+  },
+  {
+    "title": "Матч Премьер",
+    "category": "Спорт",
+    "url": "https://tas-ix.tv/tv_tasix/55-match-premier.html"
   }
 ]
