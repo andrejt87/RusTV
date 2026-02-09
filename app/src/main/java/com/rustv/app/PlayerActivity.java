@@ -154,18 +154,38 @@ public class PlayerActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        switch (keyCode) {
-            case KeyEvent.KEYCODE_DPAD_UP:
-            case KeyEvent.KEYCODE_CHANNEL_UP:
-                switchChannel(-1);
-                return true;
-            case KeyEvent.KEYCODE_DPAD_DOWN:
-            case KeyEvent.KEYCODE_CHANNEL_DOWN:
-                switchChannel(1);
-                return true;
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            switch (event.getKeyCode()) {
+                case KeyEvent.KEYCODE_DPAD_UP:
+                case KeyEvent.KEYCODE_CHANNEL_UP:
+                    switchChannel(-1);
+                    return true;
+                case KeyEvent.KEYCODE_DPAD_DOWN:
+                case KeyEvent.KEYCODE_CHANNEL_DOWN:
+                    switchChannel(1);
+                    return true;
+                case KeyEvent.KEYCODE_DPAD_CENTER:
+                case KeyEvent.KEYCODE_ENTER:
+                case KeyEvent.KEYCODE_NUMPAD_ENTER:
+                case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
+                    togglePlayPause();
+                    return true;
+                case KeyEvent.KEYCODE_BACK:
+                    break; // let default handle
+            }
         }
-        return super.onKeyDown(keyCode, event);
+        return super.dispatchKeyEvent(event);
+    }
+
+    private void togglePlayPause() {
+        webView.evaluateJavascript(
+            "(function() {" +
+            "  var v = document.querySelector('video');" +
+            "  if (v) {" +
+            "    if (v.paused) { v.play(); } else { v.pause(); }" +
+            "  }" +
+            "})();", null);
     }
 
     private void switchChannel(int direction) {
