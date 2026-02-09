@@ -143,9 +143,28 @@ public class MainActivity extends AppCompatActivity {
 
         static class ChannelViewHolder extends RecyclerView.ViewHolder {
             TextView textView;
+            TextView arrowView;
+            View accentView;
             ChannelViewHolder(View itemView) {
                 super(itemView);
                 textView = itemView.findViewById(R.id.channel_title);
+                arrowView = itemView.findViewById(R.id.channel_arrow);
+                accentView = itemView.findViewById(R.id.channel_accent);
+
+                // Focus change listener for D-pad navigation
+                itemView.setOnFocusChangeListener((v, hasFocus) -> {
+                    if (hasFocus) {
+                        textView.setTextColor(0xFFFFFFFF);
+                        if (arrowView != null) arrowView.setTextColor(0xFFFFFFFF);
+                        if (accentView != null) accentView.setBackgroundColor(0xFFFFFF00);
+                        v.animate().scaleX(1.03f).scaleY(1.03f).setDuration(150).start();
+                    } else {
+                        textView.setTextColor(0xFFE0E0E0);
+                        if (arrowView != null) arrowView.setTextColor(0xFF666666);
+                        if (accentView != null) accentView.setBackgroundColor(0xFFFF4444);
+                        v.animate().scaleX(1.0f).scaleY(1.0f).setDuration(150).start();
+                    }
+                });
             }
             void bind(Channel channel) {
                 textView.setText(channel.title);
