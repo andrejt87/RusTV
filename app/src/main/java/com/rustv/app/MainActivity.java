@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         List<Channel> channels = loadChannels();
         List<Object> items = buildCategorizedList(channels);
 
-        ChannelAdapter adapter = new ChannelAdapter(this, items);
+        ChannelAdapter adapter = new ChannelAdapter(this, items, channels);
         recyclerView.setAdapter(adapter);
     }
 
@@ -85,10 +85,12 @@ public class MainActivity extends AppCompatActivity {
 
         private final Context context;
         private final List<Object> items;
+        private final List<Channel> allChannels;
 
-        ChannelAdapter(Context context, List<Object> items) {
+        ChannelAdapter(Context context, List<Object> items, List<Channel> allChannels) {
             this.context = context;
             this.items = items;
+            this.allChannels = allChannels;
         }
 
         @Override
@@ -117,9 +119,11 @@ public class MainActivity extends AppCompatActivity {
                 Channel channel = (Channel) items.get(position);
                 ((ChannelViewHolder) holder).bind(channel);
                 holder.itemView.setOnClickListener(v -> {
+                    int channelIndex = allChannels.indexOf(channel);
                     Intent intent = new Intent(context, PlayerActivity.class);
                     intent.putExtra("url", channel.url);
                     intent.putExtra("title", channel.title);
+                    intent.putExtra("channelIndex", channelIndex);
                     context.startActivity(intent);
                 });
             }
